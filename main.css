@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+	scroll-behavior: smooth;
+}
+  .navbar{
+      padding: 0;
+  }
+
+.top-navbar{
+    position: absolute;
+    width: 100%;
+    top: 3vh;
+    text-align: center;
+    z-index: 20;
+    color: wheat;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
+    }
+    .nav-link{
+        color: wheat;
+    }
+    .top-navbar>li{
+        
+        font-family: 'Big Shoulders Text';
+        font-size: 4vh;
+    }
+
+    .background{
+        min-height: calc(120vh - 60px);
+        background: url("./bg.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 100vh; */
+}
+
+.aboutus h1{
+    margin:0;
+    padding:0;
+    font-size: 4.8em;
+    font-weight: 100;
+    color: #262626;
+    text-transform: uppercase;
+}
+.aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+   
+}
+
+.logo{
+    width: 15%;
+}
+
+.paper{
+    padding-top: 5%;
+    margin-left: 10%;
+    /* background: url(./annie-spratt-xt79nQxc9Q0-unsplash.jpg); */
+    min-height: calc(100vh - 60px);
+    border-color: black;
+    
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 80%;
+    border-style: dotted;
+  border-width: 2px;
+
+}
+
+.leftside, .rightside{
+    height: 50vh;
+    width: 100%;
+
+}
+
+.leftside{
+    background: url(./karly-gomez-JyPGyqho0IQ-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.rightside{
+    background: #f6f5f1;
+    width: 60vw;
+    height: 100vh;
+}
+
+.rightside>p{
+    font-size: 20px;
+    font-family: "Lora", serif;
+    color: #555555;
+    font-style: italic;
+    line-height: 1.6;
+    padding: 10%;
+}
+
+.credit{
+    position: relative;
+}
+
+.credit p{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 3em;
+}
+
+.wrapper{
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 40% 40% ;
+    grid-template-rows: 10%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    border-color: black;
+    
+  /* border-width: 2px; */
+    
+}
+
+
+
+.item{
+    /* background: #58d5f6; */
+    color: black;
+    text-align:left;
+    display: -webkit-box;
+    justify-content: space-around;
+}
+
+.item:nth-child(even){
+    /* background:red; */
+}
+
+/* img{
+    width: 25%;
+    padding: 20px;
+} */
+
+.item>p{
+    padding-left: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Pacifico';
+    font-weight: 200;
+}
+
+.heading{
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.menu-heading{
+    height: 15rem;
+}
+
+h2{
+    font-family: 'Pacifico';
+    font-size: 35px;
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+    background-color: Wheat;
+    margin-top: 15rem;
+}
+
+.footercontainer >p{
+    color: white;
+}
+
+.foodmenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+h1
+{
+	color:black;
+	margin: 0;
+    padding: 0;
+    font-size: 4.8em;
+    font-weight: 100;
+    color: #262626;
+    text-transform: uppercase;
+}
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+	border-radius:0%;
+	margin-bottom:20px;
+	width: 50vw;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+    font-weight:700;
+    font-family: 'Pacifico';
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	
+}
+.team-back >span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+.team-front>p{
+    font-family: 'Pacifico';
+    font-size: 18px;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-400px;
+	transition: all 0.8s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#FF5722;
+	transition:0.5s;
+}
+
+.col-lg-3 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+    .fa {
+        padding: 30px;
+        font-size: 30px;
+        margin: 10px;
+        text-align: center;
+        text-decoration: none;
+       
+      }
+     
+      
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      /* Set a specific color for each brand */
+      
+      /* Facebook */
+      .fa-facebook {
+        border-radius: 50%;
+        background: #3B5998;
+        color: white;
+      }
+      
+      /* Twitter */
+      .fa-twitter {
+        border-radius: 50%;
+        background: #55ACEE;
+        color: white;
+      }
+      .fa-instagram {
+          border-radius: 50%;
+        background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        color: white;
+      }
+
+
+
+
+/* RESPONSIVE BELOW*/
+
+
+@media screen and (max-width: 768px){
+    .rightside>p{
+        font-size: 14px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .rightside{
+        width: 100vw;
+        height: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    .nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        transform: translate(-5%, 50%);
+        z-index: 2;
+    }
+
+    .top-navbar{
+        position: fixed;
+       background: #FF5722;
+       height: 100vh;
+       width: 100%;
+       flex-direction: column;
+       clip-path: circle(100px at 80% -20%);
+       -webkit-clip-path: circle(100px at 90% -20%);
+       transition: all 1s ease-out;
+       
+    }
+
+    .top-navbar.open{
+        clip-path: circle(1000px at 80% -20%);
+        -webkit-clip-path: circle(1000px at 90% -20%);
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .background{
+        min-height: calc(50vh - 60px);
+        background: url("./bg.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+     }
+}
+
+
+@media screen and (max-width: 768px){
+    .footercontainer {
+        height: 50vh;
+        display: inline-table;
+        justify-content: space-between;
+        width: 100%;
+        padding: 40px;
+        background-color: Wheat;
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .aboutus>h1{
+        margin:0;
+        padding:0;
+        font-size: 2.8em;
+        font-weight: 100;
+        color: #262626;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .paper {
+        padding-top: 5%;
+        margin-left: 10%;
+        /* background: url(./annie-spratt-xt79nQxc9Q0-unsplash.jpg); */
+        min-height: calc(100vh - 60px);
+        border-color: black;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 80%;
+        border-style: dotted;
+        border-width: 2px;
+        word-wrap: break-word;
+        overflow: hidden;
+}
+}
